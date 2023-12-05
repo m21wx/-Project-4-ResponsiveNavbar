@@ -1,0 +1,42 @@
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+	text-decoration: none;
+}
+
+ul{
+	list-style:none;
+}
+.navBar{
+	    padding: 20px;
+		position:relative;
+		overflow:hidden;
+		background: aliceblue;
+}
+.boxNav{
+    position: absolute;
+    background: #0000009c;
+
+    padding: 10px;
+    left: -100px;
+    width: 100px;
+    transition: 3s;	
+	
+}
+.navBar .close{
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;	
+}
+.boxNav.active{
+	    width: 100%;
+		left:0;
+}
+.boxNav ul li{
+	margin: 10px 0;
+    color: blue;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
